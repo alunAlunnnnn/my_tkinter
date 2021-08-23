@@ -1,6 +1,7 @@
 import tkinter as tk
 import os
 
+
 class MainForm:
     def __init__(self):
         # 窗体实例
@@ -40,7 +41,13 @@ class MainForm:
         # 插入图片
         text.image_create(tk.END, image=photo)
         # 文本标签显示
-        text.pack()
+        # text.pack()
+
+        # ---------- 按钮控件 - ---------
+        # 设置按钮控件
+        button = tk.Button(root, image=photo, text="这是个图片", compound="top", font=("微软雅黑", 20), fg="#a00")
+
+        button.pack()
 
         root.mainloop()
 
